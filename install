@@ -1,5 +1,15 @@
 #!/usr/bin/env zsh
 
+# Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/local/bin/brew tap caskroom/cask # https://caskroom.github.io/
+/usr/local/bin/brew install tmux
+
+# Oh-my-zsh
+/usr/bin/curl -#L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
+rm -f ~/.zshrc
+rm -f ~/.zshrc.pre-oh-my-zsh*
+
 # Git clone
 cd ~/Desktop
 /bin/rm -rf .git
@@ -14,14 +24,6 @@ do
 	/bin/rm -f ~/${i}
 	/bin/ln -fs ~/Desktop/${i} ~/${i}
 done
-
-# Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-/usr/local/bin/brew tap caskroom/cask # https://caskroom.github.io/
-/usr/local/bin/brew install tmux
-
-# Oh-my-zsh
-/usr/bin/curl -#L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
 
 # Terminal Theme
 defaults read com.apple.Terminal | grep lucario
