@@ -18,3 +18,5 @@
 .vim/colors/*
 !.vim/colors/lucario.vim
 !lucario.terminal
+!install
+!.vscode/tasks.json
