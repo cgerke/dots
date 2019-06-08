@@ -1,12 +1,12 @@
 #!/usr/bin/env zsh
 
 # Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-/usr/local/bin/brew tap caskroom/cask # https://caskroom.github.io/
-/usr/local/bin/brew install tmux
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew tap caskroom/cask # https://caskroom.github.io/
+brew install tmux
 
 # Oh-my-zsh
-/usr/bin/curl -#L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
+curl -#L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
 rm -f ~/.zshrc
 rm -f ~/.zshrc.pre-oh-my-zsh*
 
@@ -23,8 +23,8 @@ git push --set-upstream origin master
 # Symlink dot files
 for i in ".ssh" ".vim" ".gitconfig" ".gitmessage" ".vimrc" ".zshrc"
 do
-	/bin/rm -f ~/${i}
-	/bin/ln -fs ~/Desktop/${i} ~/${i}
+	rm -f ~/${i}
+	ln -fs ~/Desktop/${i} ~/${i}
 done
 
 # Terminal Theme
@@ -69,7 +69,7 @@ fi
 # Chflags cleanup desktop
 for i in "install" "lucario.terminal" "README.md" "vscode.code-workspace"
 do
-	/usr/bin/chflags -h hidden ~/Desktop/${i}
+	chflags -h hidden ~/Desktop/${i}
 done
 
 exit 0
