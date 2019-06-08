@@ -8,4 +8,11 @@ cd ~/Desktop
 /usr/local/bin/git fetch --all --prune
 /usr/local/bin/git checkout master
 
+# Symlink dot files
+for i in ".ssh" ".vim" ".gitconfig" ".gitmessage" ".vimrc" ".zshrc"
+do
+	/bin/rm -f ~/${i}
+	/bin/ln -fs ~/Desktop/${i} ~/${i}
+done
+
 exit 0
