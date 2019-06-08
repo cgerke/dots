@@ -21,7 +21,7 @@ done
 /usr/local/bin/brew install tmux
 
 # Oh-my-zsh
-/usr/bin/curl -#L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sudo bash
+/usr/bin/curl -#L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
 
 # Terminal Theme
 defaults read com.apple.Terminal | grep lucario
