@@ -1,0 +1,14 @@
+syntax enable
+set autoindent
+set copyindent
+set expandtab
+set hlsearch
+set incsearch
+set laststatus=2
+set showtabline=2
+set nobackup
+set noswapfile
+set number
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
