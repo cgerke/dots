@@ -8,3 +8,6 @@
 !.vscode
 .vscode/*
 !.vscode/extensions.json
+!.ssh
+.ssh/*
+!.ssh/config
