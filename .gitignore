@@ -11,3 +11,4 @@
 !.ssh
 .ssh/*
 !.ssh/config
+!.vimrc
