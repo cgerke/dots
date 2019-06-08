@@ -1,4 +1,5 @@
 syntax enable
+colo lucario
 set autoindent
 set copyindent
 set expandtab
