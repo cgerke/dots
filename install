@@ -6,9 +6,10 @@ brew tap caskroom/cask # https://caskroom.github.io/
 brew install tmux
 
 # Oh-my-zsh
-curl -#L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
+rm -Rf ~/.oh-my-zsh
 rm -f ~/.zshrc
 rm -f ~/.zshrc.pre-oh-my-zsh*
+curl -#L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
 
 # Git clone
 cd ~/Desktop
