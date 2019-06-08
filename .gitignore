@@ -3,3 +3,4 @@
 .localized
 !.gitignore
 !.gitconfig
+!.gitmessage
