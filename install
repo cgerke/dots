@@ -12,12 +12,13 @@ rm -f ~/.zshrc.pre-oh-my-zsh*
 
 # Git clone
 cd ~/Desktop
-/bin/rm -rf .git
-/usr/local/bin/git init
-/usr/local/bin/git remote add origin https://github.com/cgerke/dots
-/usr/local/bin/git fetch --all
-/usr/local/bin/git reset --hard origin/master
-/usr/local/bin/git checkout master
+rm -rf .git
+git init
+git remote add origin https://github.com/cgerke/dots
+git fetch --all
+git reset --hard origin/master
+git checkout master
+git push --set-upstream origin master
 
 # Symlink dot files
 for i in ".ssh" ".vim" ".gitconfig" ".gitmessage" ".vimrc" ".zshrc"
