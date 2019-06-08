@@ -5,3 +5,6 @@
 !.gitconfig
 !.gitmessage
 !vscode.code-workspace
+!.vscode
+.vscode/*
+!.vscode/extensions.json
