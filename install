@@ -3,7 +3,7 @@
 # Homebrew
 url="https://raw.githubusercontent.com"
 url="${url}/Homebrew/install/master/install"
-ruby -e "$(curl -fsSL $url)"
+echo | ruby -e "$(curl -fsSL ${url})" > /dev/null
 brew tap caskroom/cask # https://caskroom.github.io/
 brew install tmux
 
