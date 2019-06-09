@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "vscodevim.vim",
-        "ikuyadeu.lucario"
+        "ikuyadeu.lucario",
+        "pkief.material-icon-theme",
     ]
 }
