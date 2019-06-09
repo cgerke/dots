@@ -32,7 +32,7 @@ do
 done
 
 # Terminal Theme
-defaults read com.apple.Terminal | grep lucario
+defaults read com.apple.Terminal | grep "lucario"
 if [ $? != 0 ]; then
 defaults write com.apple.Terminal "Default Window Settings" "lucario"
 defaults write com.apple.Terminal "Startup Window Settings" "lucario"
