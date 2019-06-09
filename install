@@ -28,8 +28,7 @@ git push --set-upstream origin master
 # Symlink dot files
 for i in ".ssh" ".vim" ".gitconfig" ".gitmessage" ".vimrc" ".zshrc"
 do
-	rm -f ~/${i}
-	ln -fs ~/Desktop/${i} ~/${i}
+	ln -fns ~/Desktop/${i} ~/${i}
 done
 
 # Terminal Theme
