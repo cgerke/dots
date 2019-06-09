@@ -16,7 +16,7 @@ url="${url}/robbyrussell/oh-my-zsh/master/tools/install.sh"
 curl -#L $url | bash
 
 # Git clone
-cd ~/Desktop
+cd ~/Desktop || exit
 rm -rf .git
 git init
 git remote add origin https://github.com/cgerke/dots
