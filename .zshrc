@@ -68,7 +68,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew cask git osx ruby ssh-agent sudo tmux)
+plugins=(aws cask git osx ruby ssh-agent sudo tmux)
 
 source $ZSH/oh-my-zsh.sh
 
