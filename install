@@ -22,6 +22,11 @@ curl -#L $url | bash
 # admins rwx
 chmod -R 775 /usr/local/share/zsh
 
+# Symlink dot files
+for i in ".ssh" ".vim" ".gitconfig" ".git-credentials" ".gitmessage" ".vimrc" ".zshrc"; do
+  ln -fns ~/Desktop/${i} ~/${i}
+done
+
 # Git clone
 cd ~/Desktop || exit
 rm -rf .git
@@ -31,12 +36,6 @@ git fetch --all
 git reset --hard origin/master
 git checkout master
 git push --set-upstream origin master
-
-# Symlink dot files
-for i in ".ssh" ".vim" ".gitconfig" ".gitmessage" ".vimrc" ".zshrc"
-do
-	ln -fns ~/Desktop/${i} ~/${i}
-done
 
 # Terminal Theme
 defaults read com.apple.Terminal | grep "lucario"
