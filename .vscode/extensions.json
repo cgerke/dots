@@ -3,5 +3,8 @@
         "vscodevim.vim",
         "ikuyadeu.lucario",
         "pkief.material-icon-theme",
+        "felixrieseberg.vsc-travis-ci-status",
+        "hookyqr.beautify",
+        "timonwong.shellcheck"
     ]
 }

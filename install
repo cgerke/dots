@@ -6,6 +6,8 @@ url="${url}/Homebrew/install/master/install.sh"
 curl -#L $url | bash
 brew tap homebrew/cask
 brew install cask
+brew install shellcheck
+brew install shfmt
 brew install tmux
 
 # Oh-my-zsh
