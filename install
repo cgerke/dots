@@ -2,9 +2,10 @@
 
 # Homebrew
 url="https://raw.githubusercontent.com"
-url="${url}/Homebrew/install/master/install"
-echo | ruby -e "$(curl -fsSL ${url})" > /dev/null
-brew tap caskroom/cask # https://caskroom.github.io/
+url="${url}/Homebrew/install/master/install.sh"
+curl -#L $url | bash
+brew tap homebrew/cask
+brew install cask
 brew install tmux
 
 # Oh-my-zsh
