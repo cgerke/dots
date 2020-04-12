@@ -16,6 +16,10 @@ url="https://raw.githubusercontent.com"
 url="${url}/robbyrussell/oh-my-zsh/master/tools/install.sh"
 curl -#L $url | bash
 
+# Shared system ${USER}:admin permissions, so allow
+# admins rwx
+chmod -R 775 /usr/local/share/zsh
+
 # Git clone
 cd ~/Desktop || exit
 rm -rf .git
