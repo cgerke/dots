@@ -1,6 +1,6 @@
-## Getting Started
+# Getting Started
 
-### Basic Installation
+## Basic Installation
 
 __Disclaimer:__ _This command is going to execute a shell script, you should never do something like this without inspecting the source code first._
 
@@ -12,7 +12,7 @@ curl -#L https://raw.githubusercontent.com/cgerke/dots/master/install | sudo bas
 
 ## ~/. files
 
-This iteration is a slightly different take on my https://github.com/cgerke/dotfiles repo that was based on the awesome work by @mathiasbynen
+This iteration is a slightly different take on my <https://github.com/cgerke/dotfiles> repo that was based on the awesome work by @mathiasbynen
 
 This dot files strategy simply stores all my "dot files" in my iCloud Drive Desktop folder, which I then symlink to my ~/ root.
 

@@ -5,6 +5,9 @@
         "pkief.material-icon-theme",
         "felixrieseberg.vsc-travis-ci-status",
         "hookyqr.beautify",
-        "timonwong.shellcheck"
+        "timonwong.shellcheck",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "davidanson.vscode-markdownlint",
+        "eamodio.gitlens"
     ]
 }
