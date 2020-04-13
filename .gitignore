@@ -14,8 +14,12 @@
 .vscode/*
 !.vscode/extensions.json
 !.vscode/tasks.json
+!tests
+tests/*
+!tests/run_linters.sh
 !.gitconfig
 !.gitmessage
+!.travis.yml
 !.vimrc
 !.zshrc
 !install

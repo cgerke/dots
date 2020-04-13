@@ -38,11 +38,10 @@ git checkout master
 git push --set-upstream origin master
 
 # Terminal Theme
-defaults read com.apple.Terminal | grep "lucario"
-if [ $? != 0 ]; then
-defaults write com.apple.Terminal "Default Window Settings" "lucario"
-defaults write com.apple.Terminal "Startup Window Settings" "lucario"
-osascript <<EOD
+if ! defaults read com.apple.Terminal | grep -q "lucario"; then
+  defaults write com.apple.Terminal "Default Window Settings" "lucario"
+  defaults write com.apple.Terminal "Startup Window Settings" "lucario"
+  osascript <<EOD
 tell application "Terminal"
 	local openedWin
 	local initialWin
@@ -78,9 +77,8 @@ EOD
 fi
 
 # Chflags cleanup desktop
-for i in "install" "lucario.terminal" "README.md" "vscode.code-workspace"
-do
-	chflags -h hidden ~/Desktop/${i}
+for i in "tests" "install" "lucario.terminal" "README.md" "vscode.code-workspace"; do
+  chflags -h hidden ~/Desktop/${i}
 done
 
 exit 0
