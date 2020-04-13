@@ -50,5 +50,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-[credential]
-	helper = manager
+[credential "https://github.com"]
+	helper = store
